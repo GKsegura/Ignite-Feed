@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+
+# Build e cache
+build/
+dist/
+.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ambientes e configurações locais
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor de código
+.vscode/
+.idea/
+.DS_Store
