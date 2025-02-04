@@ -7,8 +7,14 @@
   --gray-700: #29292e;
   --gray-800: #202024;
   --gray-900: #121214;
+
   --purple-300: #9f75ff;
   --purple-500: #8257e5;
+}
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple-500);
 }
 
 * {
