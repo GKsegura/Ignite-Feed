@@ -27,8 +27,13 @@ export function Post({ author, publishedAt, content }) {
         setNewCommentText(event.target.value);
     }
 
-    function deleteComment(comment) {
-        console.log('Deletar comentário', comment);
+    function deleteComment(commentToDelete) {
+        // imutabilidade - não alterar o estado diretamente, mas sim criar um novo estado com as alterações necessárias
+        const commentsWithoutDeletedOne = comments.filter(comment => {
+            return comment !== commentToDelete;
+        })
+
+        setComments(commentsWithoutDeletedOne);
     }
 
     return (
